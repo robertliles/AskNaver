@@ -82,7 +82,7 @@ class HttpRequester(threading.Thread):
         fileType = ""
 
         config = configparser.ConfigParser()
-        my_file = (os.path.join(os.getcwd(), 'NaverMachineTranslation/conf-secure.ini'))
+        my_file = (os.path.join(os.getcwd(), 'SublimeKorean/conf-secure.ini'))
         config.read(my_file)
 
         client_id = config.get('credentials', 'client_id')
